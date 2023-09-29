@@ -1,0 +1,11 @@
+<svg id="YouTube" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32.75" height="32.75" viewBox="0 0 32.75 32.75">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #373737;
+      }
+    </style>
+  </defs>
+  <circle id="YouTube-2" data-name="YouTube" class="cls-1" cx="16.375" cy="16.375" r="16.375"/>
+  <image id="YouTube_icon" data-name="YouTube icon" x="9" y="11" width="16" height="12" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAMCAYAAABr5z2BAAAAk0lEQVQokaWS0Q3CMAxEH1UHYASYgIzACt0gTEA3KN2kmwAbdIOwQbuBUapE6kdNmnB/luPns3KIiBERJ3lyYY6DL4AT+ZqBc6UMv4BPAnkETKU0354O9GGTKg0Q9QigoRRAcHADmq1mvQPgb22BewnAAt2vX9IAF+AJXFP2/s5BTOKUmUT/3sYkRmLS7krj4gD4AhgKk5c9ahDzAAAAAElFTkSuQmCC"/>
+</svg>

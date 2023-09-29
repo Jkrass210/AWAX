@@ -1,0 +1,11 @@
+<svg id="Facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32.75" height="32.75" viewBox="0 0 32.75 32.75">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #373737;
+      }
+    </style>
+  </defs>
+  <circle id="Facebook-2" data-name="Facebook" class="cls-1" cx="16.375" cy="16.375" r="16.375"/>
+  <image id="Facebook_icon" data-name="Facebook icon" x="13" y="8" width="8" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAQCAYAAAArij59AAAAbklEQVQokWP4//8/DBv8/////H9UsJ+FAQIEGBgY9kNpFMAE5QRgkTzAwMBwAWaCAppkIAMDwwYGJBPQwQcYH2RCAwMDQzyaAhDfgYGB4QEjyM04TAGBRlxWIBwKDYP9aP53gIUPIROGgwIGBgYAEHZFJFsmcBIAAAAASUVORK5CYII="/>
+</svg>

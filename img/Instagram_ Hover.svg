@@ -1,0 +1,17 @@
+<svg id="Instagram:_Hover" data-name="Instagram: Hover" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32.75" height="32.75" viewBox="0 0 32.75 32.75">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #373737;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="0" y="0" width="32.75" height="32.75" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#b88b58"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <circle id="Instagram" class="cls-1" cx="16.375" cy="16.375" r="16.375"/>
+  <image id="Instagram_icon" data-name="Instagram icon" x="10" y="9" width="13" height="14" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAOCAYAAAD0f5bSAAAAs0lEQVQokZVSARHCMBALHAImYRKQgAMkAA5AAXMwCQwJKAAczEHnJFy4/9GV7ii5+2vz/fTzWxckjwC2KMdNIhaUDxabN2MZKt1NslX18g9bH8z0uZDc2yoEknc/RJQMtm8s79GkNW7vaiF0iZkurcnNtP7BJ6KHrWcAte1r4/H5l0hWdHOIQlz5UbRKOh8APAHsjOuHao7JnP4iegCnzHwpWnWWSBZ8hhIMElWZLzYPoH8BcU28b9118k4AAAAASUVORK5CYII="/>
+</svg>

@@ -1,0 +1,11 @@
+<svg id="Other" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32.75" height="32.75" viewBox="0 0 32.75 32.75">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #373737;
+      }
+    </style>
+  </defs>
+  <circle id="Other-2" data-name="Other" class="cls-1" cx="16.375" cy="16.375" r="16.375"/>
+  <image id="Other_icon" data-name="Other icon" x="7" y="14" width="19" height="5" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAFCAYAAACn39dKAAAAf0lEQVQYlW2PAQ3CUAxEjyn4Er6ESZiUSUACDrCAg+Fkc/BxgIQjR66hFF7StL1L0xYkFRs/rNYUM8lhZ7gP75pmVAMernQP7EXX0lhSWSYAHb+EVr1W8je+IqN3/r0iLtYbyWfSVffT+1dgcYgbgEdaefYl0uQFunp1cwdwvACRcNaTl8a5WQAAAABJRU5ErkJggg=="/>
+</svg>

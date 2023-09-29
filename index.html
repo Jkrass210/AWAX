@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>awax</title>
+  <link href="fonts/Montserrat-Regular.woff2" rel="preload" as="font">
+  <link href="fonts/Montserrat-SemiBold.woff2" rel="preload" as="font">
+  <link href="fonts/Montserrat-Medium.woff2" rel="preload" as="font">
+  <link href="fonts/Montserrat-Bold.woff2" rel="preload" as="font">
+  <link href="fonts/Montserrat-ExtraBold.woff2" rel="preload" as="font">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/inputmask.min.js"></script>
+  <script src="js/focus-visible.js"></script>
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <header class="header" id="header">
+    <div class="header__box">
+      <div class="container header__containet">
+        <a class="header__link" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="51"
+            viewBox="0 0 50 51">
+            <image id="Logo" width="50" height="51"
+              xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAzCAYAAADVY1sUAAAD+ElEQVRoge1Zy1EbQRBtuwhgncE6AzkClggs3XxDRCARgeDsA2SAiQB8800iAuQIrBA2BNfg16pm3J8ZsUvhKr8qFay0O/2Z7tfds+9+fP1CI6Mhon5sIe/HFkBEN0R0MbaQsQ1ZEtGUiFZE1I0paExDJjCAcYcwGwVjGnKTKd7AmH/KkCvsSI4O4TY4xjAkUtYy8kUY2pDS8Bk8X4Y2JM8LCy3uHQxDGsJUW4rpkPkylCE51UpcEtG98dtqqHwZyhArpDao6mdEtFN+byrC0cUREa2NGx4KWwuLhXoYwP/PiOhRuW+CNfheC57RD8mQ71goR6LRrRMWFFBtvgtprXND1hx6eLJWRg4+OSyF1rWzwA0YRoNHtd+MNQ+V5TksOWfHOeLFsKWstc07LG6hVpanwz2ctk92jmENEyUcPKqdBfNH7+SDJstz2H4dyVpbx5NS8Yhqt7YNe2xwbyTLc9iZdFhOv1EMe8yxMVhubihzgWcsWV3gsGfPaqNuA5rUEq83jEjff1Jif4K1rN/TWr8q68gWaz2DVhC9fLEEagnciH7KSlhPlgbzfquye/mSw6LavP3QEpmCfMlxbjCe26JcOzHMsKjWagit5PXyhbGnWg1RrxVR6ZnyexO06Fbh81qUXdTCRIZEMaydjERNoJUv3gigOewZSrpfL4bzY57SmSTPl6g2RWGn0q+FtbEDyVMfES7rSio9gZKPRgetUq2GowqhM4PzGzGDa0ZsEePaTt0hia0xoJiaawzhhbX5xTpF7AVhTJQkb1D5NZhUq6F2QqzhfBLK1BY+l2o1HDLqlnC+pkxpkQ2pVsOhM3tUXyxlSopsSLUaDjUkChVPGc8JRVSr4SWnKBt4uFYZywkp9A5+j/LS46DzbJAqVSYnjVoy+AtDnGtxqNQqI0mjimo11NQRC5zYzQHKzNCaVFGthiEMoeA8ykNfMfe4eI2Xoa+C/4a8Nfw35K1BGtKgHbcOkiUmWeve4prnkZq1uoqXPZNMDsttpSFLzBolLzO7bGJc4Zpni3nhtMjrPFa8e1xDXiP07aUhCxS03NsauG58FgqlmnCM62OsFZ0DL0QRLXmfeI/PEga03KCyIXNYeAKFToMFWUkOnxYC2AFdQZFsMf7yO8ZIJoNPNTth2D5H2DMt+p95QXzfYvemePYSzlji723w/AJ/k+N+Qp419ko0WY4QG9KJeXotDgmiRdnjCxi/w+eqIKzkrH4njoJKdoUP/66h9wUbcgqvfEjHQ/hsK8KrxYtTEt1sFFZTEcosMykWMV1SOt2Tdj/1aEne09laOtfiRJUe5LhP33ljZ35f6XPJk8kQOYCl6/Q976wGzkF+7s8zRP1vHEUTeQT6e24AAAAASUVORK5CYII=">
+            </image>
+          </svg>
+        </a>
+
+        <nav class="header__nav nav" id="nav">
+          <ul class="nav__list list-reset">
+            <li class="nav__item">
+              <button class="close nav__close btn-reset" id="closeNav" aria-label="Закрыть">
+                <span class="close__line"></span>
+                <span class="close__line"></span>
+              </button>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link js-scroll-link" href="#header">HOME</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link js-scroll-link" href="#about">ABOUT US</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link js-scroll-link" href="#">SERVICES</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link js-scroll-link" href="#">OUR PROJECTS</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link js-scroll-link" href="#">OUR TEAM</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link js-scroll-link" href="#">HAPPY CLIENTS</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link js-scroll-link" href="#price">PRICE</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link js-scroll-link" href="#">SOME FACTS</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link js-scroll-link" href="#contact">CONTACT US
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="header__burger burger btn-reset" id="burger" aria-label="Меню">
+          <span class="burger__span"></span>
+          <span class="burger__span"></span>
+          <span class="burger__span"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="hero main__section" id="hero">
+      <div class="swiper-container swiper-container--header">
+        <div class="swiper-wrapper swiper-wrapper--header">
+          <div class="swiper-slide swiper-slide--header swiper-slide--one"></div>
+          <div class="swiper-slide swiper-slide--header swiper-slide--two"></div>
+          <div class="swiper-slide swiper-slide--header swiper-slide--three"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="container hero__container">
+        <div class="hero__content">
+          <h1 class="hero__title">Design&nbsp;is&nbsp;about <span class="hero__title-span">communication</span></h1>
+          <a class="hero__call" href="tel:+00012345678">call us: +00 0 1234 5678 </a>
+          <button class="hero__btn btn btn-reset" id="heroBtn">GET IN TOUCH!</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="about  main__section" id="about">
+      <div class="container about__container">
+        <button class="about__tel btn-reset" id="heroBtnTel">
+          <svg xmlns="http://www.w3.org/2000/svg" width="38.88" height="38.938" viewBox="0 0 38.88 38.938">
+            <defs>
+              <style>
+                .cls-1 {
+                  fill: #fff;
+                  fill-rule: evenodd;
+                }
+              </style>
+            </defs>
+            <path class="cls-1" id="Telephone"
+              d="M1493.1,853.1a3.835,3.835,0,0,0-2.78-1.275,3.961,3.961,0,0,0-2.81,1.266l-2.6,2.59c-0.22-.115-0.43-0.222-0.64-0.328-0.29-.148-0.57-0.288-0.81-0.436a28.255,28.255,0,0,1-6.76-6.167,16.505,16.505,0,0,1-2.22-3.5c0.67-.617,1.29-1.258,1.9-1.875,0.23-.23.46-0.468,0.69-0.7a3.769,3.769,0,0,0,0-5.691l-2.24-2.244c-0.26-.255-0.52-0.518-0.77-0.781-0.49-.51-1.01-1.036-1.54-1.53a3.894,3.894,0,0,0-2.75-1.209,4.023,4.023,0,0,0-2.8,1.209l-0.02.017-2.79,2.82a6.016,6.016,0,0,0-1.78,3.823,14.269,14.269,0,0,0,1.05,6.1,35.316,35.316,0,0,0,6.29,10.491,38.66,38.66,0,0,0,12.88,10.09,20.045,20.045,0,0,0,7.23,2.137c0.17,0.008.36,0.017,0.52,0.017a6.186,6.186,0,0,0,4.74-2.04c0.01-.016.03-0.024,0.04-0.04a18.534,18.534,0,0,1,1.43-1.489c0.36-.337.72-0.69,1.07-1.06a4.076,4.076,0,0,0,1.24-2.846,3.948,3.948,0,0,0-1.26-2.82Zm2.94,8.658c-0.01,0-.01.008,0,0-0.32.345-.65,0.658-1,1a20.736,20.736,0,0,0-1.59,1.644,3.964,3.964,0,0,1-3.09,1.308c-0.13,0-.26,0-0.38-0.008a17.85,17.85,0,0,1-6.41-1.924,36.618,36.618,0,0,1-12.14-9.506,33.386,33.386,0,0,1-5.91-9.858,11.739,11.739,0,0,1-.93-5.148,3.832,3.832,0,0,1,1.14-2.442l2.8-2.8a1.884,1.884,0,0,1,1.25-.584,1.748,1.748,0,0,1,1.2.576l0.03,0.025c0.5,0.468.98,0.954,1.48,1.472,0.25,0.263.51,0.526,0.78,0.8l2.24,2.245a1.571,1.571,0,0,1,0,2.549c-0.24.239-.47,0.477-0.71,0.707-0.69.707-1.34,1.365-2.06,2.006-0.01.017-.03,0.025-0.04,0.042a1.669,1.669,0,0,0-.43,1.866l0.03,0.074a17.861,17.861,0,0,0,2.65,4.333l0.01,0.009a30.18,30.18,0,0,0,7.3,6.643,11.286,11.286,0,0,0,1.01.551c0.3,0.148.58,0.288,0.82,0.436,0.03,0.016.06,0.041,0.09,0.057a1.809,1.809,0,0,0,.82.206,1.764,1.764,0,0,0,1.25-.567l2.81-2.813a1.855,1.855,0,0,1,1.24-.616,1.657,1.657,0,0,1,1.18.6,0.14,0.14,0,0,0,.02.016l4.53,4.531A1.624,1.624,0,0,1,1496.04,861.76Zm-12.68-23.525a10.6,10.6,0,0,1,8.62,8.617,1.1,1.1,0,0,0,1.09.921,1.522,1.522,0,0,0,.19-0.016,1.107,1.107,0,0,0,.91-1.283,12.8,12.8,0,0,0-10.42-10.426,1.108,1.108,0,0,0-1.28.9A1.09,1.09,0,0,0,1483.36,838.235Zm17.86,7.918a21.062,21.062,0,0,0-17.17-17.168,1.108,1.108,0,0,0-.36,2.187,18.829,18.829,0,0,1,15.34,15.343,1.1,1.1,0,0,0,1.09.921,1.375,1.375,0,0,0,.19-0.016A1.1,1.1,0,0,0,1501.22,846.153Z"
+              transform="translate(-1462.34 -829)"></path>
+          </svg>
+        </button>
+        <div class="about__title title-grup">
+          <h2 class="title-grup__title">ABOUT US</h2>
+          <p class="title-grup__desc">who we are?</p>
+        </div>
+
+        <div class="about__content box">
+          <div class="box__left">
+            <p class="box__desc">
+              Praesent metus urna, feugiat a&nbsp;placerat vel, elementum at&nbsp;leo. Quisque vel fermentum ipsum.
+              Nulla
+              at&nbsp;facilisis est, vel condimentum ligula. Mauris volutpat vitae risus sed pellentesque. Praesent
+              fermentum
+              neque ac&nbsp;tellus gravida, at&nbsp;varius sem accumsan. Nam porta erat id&nbsp;sapien consectetur.
+              Fusce sed
+              purus eros. Vivamus rhoncus, ipsum in&nbsp;tempus fermentum, orci leo facilisis purus. Nam porta erat
+              id&nbsp;sapien consectetur. Fusce sed purus eros. Vivamus rhoncus, ipsum in&nbsp;tempus fermentum, orci
+              leo
+              facilisis purus.
+            </p>
+            <button class="box__btn btn-reset btn">learn MORE</button>
+          </div>
+          <div class="box__right">
+            <a class="box__link" href="#">
+              <img src="img/Video.webp" alt="video">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="price main__section" id="price">
+      <div class="container price__container">
+        <div class="price__title title-grup">
+          <h2 class="title-grup__title">PRICE</h2>
+          <p class="title-grup__desc">pricing table</p>
+        </div>
+
+        <div class="price__content content-cards">
+          <div class="content-cards__card card">
+            <h3 class="card__title">express</h3>
+            <p class="card__price">$9.99</p>
+            <p class="card__span">/MONTH</p>
+            <ul class="card__items list-reset">
+              <li class="card__item">Tracking issues</li>
+              <li class="card__item">Add&nbsp;bugs&nbsp;through&nbsp;email</li>
+              <li class="card__item">Notifications</li>
+              <li class="card__item">Time tracking</li>
+              <li class="card__item">Custom views</li>
+            </ul>
+            <button class="card__btn btn btn-reset">CHOOSE</button>
+          </div>
+          <div class="content-cards__card card">
+            <h3 class="card__title">standart</h3>
+            <p class="card__price">$14.99</p>
+            <p class="card__span">/MONTH</p>
+            <ul class="card__items list-reset">
+              <li class="card__item">Tracking issues</li>
+              <li class="card__item">Add&nbsp;bugs&nbsp;through&nbsp;email</li>
+              <li class="card__item">Notifications</li>
+              <li class="card__item">Time tracking</li>
+              <li class="card__item">Custom views</li>
+            </ul>
+            <button class="card__btn btn btn-reset">CHOOSE</button>
+          </div>
+          <div class="content-cards__card card">
+            <h3 class="card__title">luxe</h3>
+            <p class="card__price">$19.99</p>
+            <p class="card__span">/MONTH</p>
+            <ul class="card__items list-reset">
+              <li class="card__item">Tracking issues</li>
+              <li class="card__item">Add&nbsp;bugs&nbsp;through&nbsp;email</li>
+              <li class="card__item">Notifications</li>
+              <li class="card__item">Time tracking</li>
+              <li class="card__item">Custom views</li>
+            </ul>
+            <button class="card__btn btn btn-reset">CHOOSE</button>
+          </div>
+          <div class="content-cards__card card">
+            <h3 class="card__title">premium</h3>
+            <p class="card__price">$24.99</p>
+            <p class="card__span">/MONTH</p>
+            <ul class="card__items list-reset">
+              <li class="card__item">Tracking issues</li>
+              <li class="card__item">Add&nbsp;bugs&nbsp;through&nbsp;email</li>
+              <li class="card__item">Notifications</li>
+              <li class="card__item">Time tracking</li>
+              <li class="card__item">Custom views</li>
+            </ul>
+            <button class="card__btn btn btn-reset">CHOOSE</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact main__section" id="contact">
+      <div class="container contact__container">
+        <div class="contact__title title-grup">
+          <h2 class="title-grup__title">CONTACT US</h2>
+          <p class="title-grup__desc">our agency located in&nbsp;Melbourne, Australia</p>
+        </div>
+
+        <form class="contact__form form">
+          <div class="form__box-top">
+            <label class="form__label label-data">
+              <input class="label-data__input input-name" type="text" name="name" placeholder="NAME">
+            </label>
+            <label class="form__label label-data">
+              <input class="label-data__input input-email" type="email" name="email" placeholder="EMAIL">
+            </label>
+          </div>
+          <div class="form__box-bottom">
+            <label class="form__label label-info">
+              <input class="label-info__input input-subject" type="text" name="subject" placeholder="SUBJECT">
+            </label>
+            <label class="form__label-textarea label-info">
+              <span class="label-info__span">message</span>
+              <textarea class="label-info__textarea textarea" name="message" placeholder></textarea>
+            </label>
+          </div>
+          <button class="form__btn btn btn-reset">send message</button>
+        </form>
+        <a class="form__arrow js-scroll-link btn-reset" href="#header"></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="container footer__container">
+      <div class="footer__left">
+        <ul class="footer__items list-reset">
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              <svg id="Twitter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="32.75" height="32.75" viewBox="0 0 32.75 32.75">
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #373737;
+                    }
+                  </style>
+                </defs>
+                <circle class="cls-1" id="Twitter-2" data-name="Twitter" cx="16.375" cy="16.375" r="16.375"></circle>
+                <image id="Twitter_icon" data-name="Twitter icon" x="8" y="10" width="17" height="13"
+                  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAANCAYAAABPeYUaAAAAx0lEQVQokZWTgRGCMAxFv54DdARGYARG6AbiJmzgOYFu4DmBbgAjuAFu8L14Ce3VtgfvrpcSQpqfBpCU1ZBsdZ9bPcmZgTNJrxb2waBBuUQdyzzl/R4BB2AEMOjeOKKMxE12Wp+cJVVd1T9WKkEsJ9W8htmSmByXSFjDZDGW5BY7V/JYwqJb8BskSZxL5QivDVVcAHxyldjQya3UuKezdNCGNmpbAF2lAund6c+r2mxiS8isSM+yv8XuNywBqcRHz2/tldg8AL4gZ7bEttfZDQAAAABJRU5ErkJggg==">
+                </image>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              <svg id="Instagram" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="32.75" height="32.75" viewBox="0 0 32.75 32.75">
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #373737;
+                    }
+                  </style>
+                </defs>
+                <circle class="cls-1" id="Instagram-2" data-name="Instagram" cx="16.375" cy="16.375" r="16.375">
+                </circle>
+                <image id="Instagram_icon" data-name="Instagram icon" x="10" y="9" width="13" height="14"
+                  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAOCAYAAAD0f5bSAAAAs0lEQVQokZVSARHCMBALHAImYRKQgAMkAA5AAXMwCQwJKAAczEHnJFy4/9GV7ii5+2vz/fTzWxckjwC2KMdNIhaUDxabN2MZKt1NslX18g9bH8z0uZDc2yoEknc/RJQMtm8s79GkNW7vaiF0iZkurcnNtP7BJ6KHrWcAte1r4/H5l0hWdHOIQlz5UbRKOh8APAHsjOuHao7JnP4iegCnzHwpWnWWSBZ8hhIMElWZLzYPoH8BcU28b9118k4AAAAASUVORK5CYII=">
+                </image>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              <svg id="LinkedIn" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="32.75" height="32.75" viewBox="0 0 32.75 32.75">
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #373737;
+                    }
+                  </style>
+                </defs>
+                <circle class="cls-1" id="LinkedIn-2" data-name="LinkedIn" cx="16.375" cy="16.375" r="16.375"></circle>
+                <image id="LinkedIn_icon" data-name="LinkedIn icon" x="9" y="8" width="14" height="14"
+                  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAoElEQVQokdWS4QnCQAyFP0sH6AgdwRHqJB1BnEA6gSvoJHWEG8ENrBM8iU0hgnD5ayAkhHvJy7sgadZqT0mDJDLeAAOrdSGvmgFLeFWywI2WUeyyNM1bYA59bh7HwOAFHH2VBbgCp53JEoCTx3OF6NQktinecAm1sU0ADw4yv3itr028h0lfimeo/rQ/Ato/xvt8eOw9mjCbKHYA+08GvAEXDXLeBdpo/QAAAABJRU5ErkJggg==">
+                </image>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              <svg id="Facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="32.75" height="32.75" viewBox="0 0 32.75 32.75">
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #373737;
+                    }
+                  </style>
+                </defs>
+                <circle class="cls-1" id="Facebook-2" data-name="Facebook" cx="16.375" cy="16.375" r="16.375"></circle>
+                <image id="Facebook_icon" data-name="Facebook icon" x="13" y="8" width="8" height="16"
+                  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAQCAYAAAArij59AAAAbklEQVQokWP4//8/DBv8/////H9UsJ+FAQIEGBgY9kNpFMAE5QRgkTzAwMBwAWaCAppkIAMDwwYGJBPQwQcYH2RCAwMDQzyaAhDfgYGB4QEjyM04TAGBRlxWIBwKDYP9aP53gIUPIROGgwIGBgYAEHZFJFsmcBIAAAAASUVORK5CYII=">
+                </image>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              <svg id="YouTube" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="32.75" height="32.75" viewBox="0 0 32.75 32.75">
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #373737;
+                    }
+                  </style>
+                </defs>
+                <circle class="cls-1" id="YouTube-2" data-name="YouTube" cx="16.375" cy="16.375" r="16.375"></circle>
+                <image id="YouTube_icon" data-name="YouTube icon" x="9" y="11" width="16" height="12"
+                  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAMCAYAAABr5z2BAAAAk0lEQVQokaWS0Q3CMAxEH1UHYASYgIzACt0gTEA3KN2kmwAbdIOwQbuBUapE6kdNmnB/luPns3KIiBERJ3lyYY6DL4AT+ZqBc6UMv4BPAnkETKU0354O9GGTKg0Q9QigoRRAcHADmq1mvQPgb22BewnAAt2vX9IAF+AJXFP2/s5BTOKUmUT/3sYkRmLS7krj4gD4AhgKk5c9ahDzAAAAAElFTkSuQmCC">
+                </image>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              <svg id="Googleplus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="32.75" height="32.75" viewBox="0 0 32.75 32.75">
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #373737;
+                    }
+                  </style>
+                </defs>
+                <circle class="cls-1" id="Google_plus" data-name="Google plus" cx="16.375" cy="16.375" r="16.375">
+                </circle>
+                <image id="Google_plus-2" data-name="Google plus" x="8" y="9" width="18" height="16"
+                  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAQCAYAAAAbBi9cAAAA+UlEQVQ4jZ1UCw3CMBB9EARMwiRMwiTMAZMwCaAACYACcDAJm4PhYDh45JLX5VK6D7ykufZufeu93nVHEg4VgALf6AE8nbeWvU0eIyKZkexIDiRPsoaR5ENxuNFqTL4wabUxc8SBrIpIFokYB0jW8j+0LjmP8uDyjrXpZTPZF4Cz5kfZ+xSLUmvciap/UsslNiV2LaHrBMkiEZwOFxFeZ0iSI+UMIo8i/okokz6t0ytgLr0vokJ/76ITNPIzUZBJokEbUh+Hm1tNcQ8gVy28Ez1mtbMNrhXslvypbG5VbfHNGoUaCq0S1mYtvkrknxFrkdK1RPx0zAPAByYG1eulzFoyAAAAAElFTkSuQmCC">
+                </image>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              <svg id="Other" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="32.75" height="32.75" viewBox="0 0 32.75 32.75">
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #373737;
+                    }
+                  </style>
+                </defs>
+                <circle class="cls-1" id="Other-2" data-name="Other" cx="16.375" cy="16.375" r="16.375"></circle>
+                <image id="Other_icon" data-name="Other icon" x="7" y="14" width="19" height="5"
+                  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAFCAYAAACn39dKAAAAf0lEQVQYlW2PAQ3CUAxEjyn4Er6ESZiUSUACDrCAg+Fkc/BxgIQjR66hFF7StL1L0xYkFRs/rNYUM8lhZ7gP75pmVAMernQP7EXX0lhSWSYAHb+EVr1W8je+IqN3/r0iLtYbyWfSVffT+1dgcYgbgEdaefYl0uQFunp1cwdwvACRcNaTl8a5WQAAAABJRU5ErkJggg==">
+                </image>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <p class="footer__desc"><span class="footer__span">AWAX</span> © 2016</p>
+      </div>
+
+      <div class="footer__right">
+        <p class="footer__desc">
+          Nulla iaculis enim a&nbsp;magna tempor congue. Sed aliquam dignissim hendrerit. Duis erat nulla, pellentesque
+          at&nbsp;enim&nbsp;in, scelerisque placerat nunc. Nulla vestibulum ex&nbsp;sed neque auctor rutrum. Donec
+          fringilla
+          tincidunt aliquet. Nullam rhoncus urna massa, vulputate congue velit pulvinar suscipit. Mauris laoreet blandit
+          pharetra. Suspendisse rutrum dolor at&nbsp;augue convallis, eget dapibus nunc consequat. Sed diam nulla,
+          elementum
+          non laoreet eu,vulputate urna, at&nbsp;pellentesque risus orci in&nbsp;ante.
+        </p>
+      </div>
+    </div>
+  </footer>
+  <div class="overlay"></div>
+
+  <div class="modal-container" id="modal">
+    <form class="modal-container__form" id="formModal" action="mail.php" method="POST">
+      <input type="hidden" name="project_name" value="Evgeniy">
+      <input type="hidden" name="admin_email" value="jkrass210@gmail.com">
+      <input type="hidden" name="form_subject" value="Form Subject">
+
+      <label class="modal-container__lebel">
+        <input class="modal-container__input label-data__input" type="text" name="name" placeholder="NAME">
+      </label>
+      <label class="modal-container__lebel">
+        <input class="modal-container__input label-data__input" type="tel" name="Phone" placeholder="+00 0 1234 5678">
+      </label>
+      <button class="modal-container__btn btn btn-reset" type="submit">CALL ME BACK!</button>
+    </form>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
