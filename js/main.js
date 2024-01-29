@@ -61,13 +61,41 @@ im.mask(selector);
 const heroBtnTel =  document.querySelector("#heroBtnTel");
 const modal = document.querySelector("#modal");
 const overlay = document.querySelector(".overlay");
+const closeModal = document.querySelector('#closeModal')
 
-heroBtnTel.addEventListener('click', function() {
-  modal.style.visibility = "visible";
-  modal.style.top = "50%";
-  modal.style.zIndex = "1000";
+function openOverlay() {
   overlay.style.visibility = "visible";
   overlay.style.bottom = "0";
+ }
+
+ function closeOverlay() {
+  overlay.style.visibility = "hidden";
+  overlay.style.bottom = "-100%";
+ }
+
+heroBtnTel.addEventListener('click', function() {
+  modal.classList.toggle("modal-container--active");
   document.body.classList.add("stop-scroll");
+  openOverlay();
 });
+
+document.addEventListener('keydown', function(event) {
+  if (event.key === "Escape") {
+    modal.classList.remove("modal-container--active");
+    document.body.classList.remove("stop-scroll");
+    closeOverlay();
+  }
+ });
+
+ overlay.addEventListener('click', function() {
+  modal.classList.remove("modal-container--active");
+  document.body.classList.remove("stop-scroll");
+  closeOverlay();
+ });
+
+ closeModal.addEventListener('click', function() {
+  modal.classList.remove("modal-container--active");
+  document.body.classList.remove("stop-scroll");
+  closeOverlay();
+ })
 
